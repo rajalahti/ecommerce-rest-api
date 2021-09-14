@@ -12,6 +12,10 @@ app.use(express.json());
 const itemRouter = require('./routes/itemRouter');
 app.use('/items', itemRouter);
 
+// CustomerRouter for registering
+const customerRouter = require('./routes/customerRouter');
+app.use('/register', customerRouter);
+
 const port = process.env.PORT;
 
 app.listen(port, () => {
