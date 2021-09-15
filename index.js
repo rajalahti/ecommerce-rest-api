@@ -14,7 +14,7 @@ app.use('/items', itemRouter);
 
 // CustomerRouter for registering
 const customerRouter = require('./routes/customerRouter');
-app.use('/register', customerRouter);
+app.use('/customers', customerRouter);
 
 const port = process.env.PORT;
 
